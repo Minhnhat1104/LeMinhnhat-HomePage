@@ -1,0 +1,36 @@
+@media (max-width: 46.1875em) { 
+    .header-name{
+        display: none;
+    }
+
+    .header-nav{
+        width: 100% !important;
+    }
+
+    .avatar{
+        width: 100% !important;
+    }
+
+    .nav-items{
+        width: 33.33% !important;
+        display: block;
+        float: left;
+        height: 55px;
+        line-height: 52px;
+        text-align: center;
+        font-weight: 700;
+        margin: 0px 0px !important;
+        border-bottom: 3px solid none;
+    }
+
+    .content-container{
+        margin: 10px 10px;
+        text-align: center !important;
+    }
+
+    #content .user-infor .contact-btn,.about-btn{
+        width: 100%;
+        margin: 12px 0px !important;
+    }
+
+}
