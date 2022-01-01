@@ -72,39 +72,34 @@ ul{
     margin-top: 55px;
     background: linear-gradient(211deg, rgba(235,106,184,1) -12%, rgba(215,242,170,1) 53%, rgba(201,89,89,1) 100%);
     height: calc(100vh - 55px);
-    position: relative;
+    display: flex;
+    justify-content: space-around;
 }
 
 #content .content-container{
     box-shadow: 5px 5px 5px 5px #ccc;
     background: linear-gradient(40deg, rgba(255, 255, 255, 0.527) 0%, rgba(233, 233, 233, 0.521) 34%, rgba(213, 213, 213, 0.658) 72%, rgba(241, 241, 241, 0.5) 100%);
-    border: 0px solid #000;
     border-radius: 24px;
     padding: 24px;
     box-shadow: 0 0 10px rgba(0,0,0, 0.5);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    float: left;
-    max-height: 33.33%;
+    display: flex;
+    justify-items: space-around;
+    margin: auto;
+    max-width: 750px;
 }
 
-#content .avatar{
+#content .content__avatar{
+    flex: 1;
     width: 33%;
-    float: left;
-}
-
-#content .avatar img{
-    width: 100%;
     border-radius: 999em;
-    border: 3px solid #000 hidden;
+    /* border: 3px solid #000 hidden; */
 }
 
 #content .user-infor{
+    flex: 2;
     float: left;
     padding: 0px 12px;
-    width: 66.66%;
+    /* width: 66.66%; */
 }
 
 #content .user-infor .heading{
@@ -127,22 +122,26 @@ ul{
     font-size: 16px;
 }
 
-#content .user-infor .contact-btn,.about-btn{
-    display: block;
-    width: 40%;
+.content__buttonSection{
+    display: flex;
+    justify-content: space-around;
+}
+.button{
+    padding: 3px 0px;
+    width: 200px;
     line-height: 48px;
     text-align: center;
     font-size: 16px;
     text-transform: uppercase;
-    border: 0px solid #000;
     border-radius: 14px;
-    background-color: #4D4252;
     color: #fff;
     font-weight: 600;
-    margin: 12px 5% 0px;
-    float: left;
 }
 
-#content .about-btn{
+.content__buttonSection .content__button--contact{
+    background-color: #4D4252;
+}
+
+.content__buttonSection .content__button--about{
     background-color: #615D47;
 }
