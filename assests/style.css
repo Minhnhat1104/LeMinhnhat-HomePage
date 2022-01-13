@@ -124,14 +124,13 @@ ul{
     flex: 1;
     width: 33%;
     border-radius: 999em;
-    /* border: 3px solid #000 hidden; */
 }
 
 #content .user-infor{
     flex: 2;
     float: left;
     padding: 0px 12px;
-    /* width: 66.66%; */
+    width: 100%;
 }
 
 #content .user-infor .heading{
