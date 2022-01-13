@@ -3,6 +3,8 @@
     --border-blue-color: #ccff66;
     --white-color: #fff;
     --text-color: #000;
+    --active-color: #4c7753;
+    --black-color: #000;
 }
 
 @keyframes borderHoverGrowth {
@@ -23,24 +25,42 @@
     }
 }
 
+
 .btn {
-    width: 200px;
-    line-height: 48px;
-    text-align: center;
-    font-size: 16px;
     text-transform: uppercase;
-    border-radius: 14px;
-    color: #fff;
-    font-weight: 600;
+    border-radius: 6px;
     border: none;
     cursor: pointer;
+    width: 165px;
 }
 
 .content__btn-link {
+    text-align: center;
+    --border-width: 2px;
+    display: block;
     text-decoration: none;
+    font-weight: 650;
     color: var(--white-color);
+    font-size: 16px;
+    line-height: 36px;
+    border: var(--border-width) solid transparent;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'The Nautigal', cursive;
 }
 
-.btn:hover {
-    opacity: 0.8;
+.content__btn-link:hover {
+    animation: btnHover linear 0.25s;
+    animation-fill-mode: forwards;
+    border-radius: 8px;
+}
+
+@keyframes btnHover {
+    from {
+    }
+    to {
+        background-color: var(--white-color);
+        color: #000;
+        border: var(--border-width) solid var(--black-color);
+    }
 }
