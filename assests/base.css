@@ -1,0 +1,46 @@
+:root {
+    --header-text-color: #fbaa37;
+    --border-blue-color: #ccff66;
+    --white-color: #fff;
+    --text-color: #000;
+}
+
+@keyframes borderHoverGrowth {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes borderHoverAfter {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0%;
+    }
+}
+
+.btn {
+    width: 200px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 14px;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.content__btn-link {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
