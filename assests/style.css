@@ -31,7 +31,7 @@ ul{
     top: 0;
     width: 100%;
     background: rgb(115,160,254);
-    background: linear-gradient(211deg, rgba(115,160,254,1) -12%, rgba(215,242,170,1) 53%, rgba(123,177,255,1) 100%);
+    background: linear-gradient(211deg, rgba(115,160,254,0.5) -12%, rgba(215,242,170,0.5) 53%, rgba(123,177,255,0.5) 100%);
     height: 55px;
     display: flex;
     align-items: center;
@@ -100,9 +100,9 @@ ul{
 }
 
 .modal {
-    margin-top: 55px;
+    padding-top: 55px;
     background: linear-gradient(211deg, rgba(235,106,184,1) -12%, rgba(215,242,170,1) 53%, rgba(201,89,89,1) 100%);
-    height: calc(100vh - 55px);
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
