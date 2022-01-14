@@ -45,7 +45,7 @@
     border: var(--border-width) solid transparent;
     width: 100%;
     font-family: 'Roboto', sans-serif;
-    font-family: 'The Nautigal', cursive;
+    /* font-family: 'The Nautigal', cursive; */
 }
 
 .content__btn-link:hover {

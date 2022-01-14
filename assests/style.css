@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    font-family: 'The Nautigal', cursive;
+    /* font-family: 'The Nautigal', cursive; */
 }
 
 .row{
@@ -76,7 +76,7 @@ ul{
 .nav-item {
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
-    font-family: 'The Nautigal', cursive;
+    /* font-family: 'The Nautigal', cursive; */
     text-decoration: none;
     color: var(--text-color);
 }
