@@ -108,7 +108,7 @@
         align-items: center;
         justify-content: space-between;
         width: calc(100% - 100px);
-        height: calc(100vh - 250px);
+        height: calc(100vh - 200px);
         border-radius: 0px;
         padding: 28px 16px;
     }
@@ -131,6 +131,10 @@
         margin: 8px 0px;
     }
 
+    .user-infor .say-sth{
+        margin: 12px 0px;
+    }
+    
     .content__buttonSection{
         flex-direction: column;
         margin-top: 0px;

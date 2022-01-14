@@ -162,13 +162,12 @@ ul{
 }
 
 #content .user-infor .say-sth{
-    margin: 16px 0px;
     line-height: 20px;
     font-size: 16px;
 }
 
 .content__buttonSection{
-    margin-top: 40px;
+    margin-top: 28px;
     display: flex;
     justify-content: space-between;
 }
