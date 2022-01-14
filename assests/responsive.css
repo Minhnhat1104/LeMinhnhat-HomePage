@@ -114,10 +114,6 @@
         height: 140px;
     }
 
-    .content__btn {
-
-    }
-
     .btn {
         border-radius: 0px;
     }
@@ -138,6 +134,10 @@
     
     .footer-nav-item-icon--active .footer-nav-item-link {
         color: var(--active-color);
+    }
+
+    .modal-text {
+        width: 100%;
     }
 
     /* footer */

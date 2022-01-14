@@ -175,14 +175,8 @@ ul{
 
 /* contact modal */
 
-.modal {
+.modal-box.modal-box--active {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-box.modal-box--contact {
-    display: none;
 }
 
 .modal-box {
@@ -192,7 +186,12 @@ ul{
     transition: padding ease-in-out 0.3s, border-radius ease-in-out 0.3s;
     box-shadow: 0 3px 12px 0 rgb(27 27 27 / 20%), 0 6px 20px 0 rgb(65 65 65 / 19%);
     animation: fade linear 1s;
-    display: flex;
+    display: none;
+}
+
+.modal-box--contact, .modal-box--about {
+    /* width: 400px; */
+    flex-direction: column;
 }
 
 .modal-box:hover {
@@ -252,6 +251,6 @@ ul{
 
 /* about modal */
 
-.modal-box.modal-box--about {
-    display: none;
+.modal-text {
+    width: 340px;
 }
