@@ -13,10 +13,11 @@
     #content .content-container{
         flex-direction: column;
         align-items: center;
+        border-radius: 0px;
     }
 
     #content .content__avatar{
-        width: 300px;
+        width: 400px;
         flex: 0;
         border-radius: 999em;
         border: 3px solid #000 hidden;
@@ -35,20 +36,21 @@
     }
 
     .content__buttonSection {
-        margin-top: 0px;
+        margin-top: 16px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        height: 100px;
+        height: 140px;
     }
 
     .btn--ipad {
         width: 100%;
+        border-radius: 0px;
     }
 
     .btn--ipad .content__btn-link {
-        line-height: 40px;
+        line-height: 60px;
         width: 100%;
     }
 }
