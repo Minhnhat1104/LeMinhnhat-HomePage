@@ -101,6 +101,16 @@
         margin: 12px 0px;
     }
 
+    .modal-contact-list {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-btn {
+        width: 100%;
+    }
+
     .content__buttonSection{
         flex-direction: column;
         margin-top: 0px;
