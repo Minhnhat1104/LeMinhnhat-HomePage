@@ -57,3 +57,15 @@ document.querySelector(".footer-nav-item--home").onclick = () => {
     document.querySelector(".footer-nav-item-icon--active").classList.remove("footer-nav-item-icon--active")
     document.querySelector(".footer-nav-item--home").classList.add("footer-nav-item-icon--active")
 }
+
+
+var phoneBtnContent = ""
+
+function mOver(obj) {
+    phoneBtnContent = obj.innerHTML;
+    obj.innerHTML = "077412275"
+}
+
+function mOut(obj) {
+    obj.innerHTML = phoneBtnContent
+}
