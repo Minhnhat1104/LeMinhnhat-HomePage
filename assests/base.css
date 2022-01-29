@@ -1,6 +1,6 @@
 :root {
     --header-text-color: hsl(0, 89%, 57%);
-    --border-blue-color: hsl(172, 70%, 59%);
+    --border-blue-color: #000;
     --white-color: #fff;
     --text-color: #000;
     --active-color: #4c7753;

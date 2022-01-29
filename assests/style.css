@@ -74,7 +74,7 @@ ul{
     cursor: pointer;
 }
 
-.nav-item {
+.nav-item-link {
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
     /* font-family: 'The Nautigal', cursive; */
@@ -82,7 +82,7 @@ ul{
     color: var(--text-color);
 }
 
-.nav-item::after {
+.nav-item-link::after {
     width: 0px;
     --border-height: 4px;
     content: "";
@@ -95,7 +95,7 @@ ul{
     transition: width linear 0.15s;
 }
 
-.nav-item-container:hover .nav-item::after{
+.nav-item-container:hover .nav-item-link::after{
     width: 100%;
 }
 
