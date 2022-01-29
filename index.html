@@ -26,14 +26,14 @@
                 </div>
                 <div class="col col-half header-nav">
                     <ul class="nav-list">
-                        <li class="nav-item-container nav-item-container--about">
-                            <a href="#" class="nav-item">About</a> 
+                        <li class="nav-item-container nav-item-container--home">
+                            <a href="#" class="nav-item">Home</a> 
                         </li>
                         <li class="nav-item-container nav-item-container--contact">
                             <a href="#" class="nav-item">Contact</a> 
                         </li>
-                        <li class="nav-item-container nav-item-container--home">
-                            <a href="#" class="nav-item">Home</a> 
+                        <li class="nav-item-container nav-item-container--about">
+                            <a href="#" class="nav-item">About</a> 
                         </li>
                     </ul>
                 </div>
@@ -65,7 +65,7 @@
             <p class="modal-text">You can have my number and social account here.</p>
             <ul class="modal-contact-list">
                 <li class="modal-contact-item">
-                    <button class="btn contact-btn contact-btn--phoneNumber"><a target="_blank" href="tel:0774122075" onmouseover="mOver(this)" onmouseout="mOut(this)" class="content__btn-link">PHONE NUMBER</a></button>
+                    <button class="btn contact-btn contact-btn--phoneNumber"><a target="_blank" href="tel:0774122075" class="content_btn-phone-link content__btn-link">PHONE NUMBER</a></button>
                 </li>
                 <li class="modal-contact-item">
                     <button class="btn contact-btn contact-btn--facebook"><a target="_blank" href="https://www.facebook.com/profile.php?id=100009413488119" class="content__btn-link">FACEBOOK</a></button>
@@ -91,23 +91,35 @@
 
     <footer class="footer-nav--mobile">
         <ul class="footer-nav-list">
-            <li class="footer-nav-item footer-nav-item--user">
+            <li class="footer-nav-item footer-nav-item--phone">
                 <a href="#" class="footer-nav-item-link">
-                    <i class="footer-nav-item-icon ti-user"></i>
-                </a> 
+                    <i class="footer-nav-item-icon ti-mobile"></i>
+                </a>
             </li>
             <li class="footer-nav-item footer-nav-item--home footer-nav-item-icon--active">
                 <a href="#" class="footer-nav-item-link">
                     <i class="footer-nav-item-icon ti-home"></i>
                 </a> 
             </li>
-            <li class="footer-nav-item footer-nav-item--phone">
+            <li class="footer-nav-item footer-nav-item--user">
                 <a href="#" class="footer-nav-item-link">
-                    <i class="footer-nav-item-icon ti-mobile"></i>
-                </a>
+                    <i class="footer-nav-item-icon ti-user"></i>
+                </a> 
             </li>
         </ul>
     </footer>
 </body>
 <script src="./main.js"></script>
+<script>
+
+
+
+
+    phoneNumberHover({
+        phoneLinkSelector: '.content_btn-phone-link',
+        phoneNumber: '0774122075'
+    })
+
+
+</script>
 </html>

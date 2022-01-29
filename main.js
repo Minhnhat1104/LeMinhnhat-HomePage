@@ -1,38 +1,27 @@
-document.querySelector(".nav-item-container--about").onclick = () => {
-    document.querySelector(".modal-box--active").classList.remove("modal-box--active")
-    document.querySelector(".modal-box--about").classList.add("modal-box--active")
-}
+var navContainerList = document.querySelectorAll('.nav-item-container')
 
-document.querySelector(".nav-item-container--contact").onclick = () => {
-    document.querySelector(".modal-box--active").classList.remove("modal-box--active")
-    document.querySelector(".modal-box--contact").classList.add("modal-box--active")
-}
+var modalBoxList = document.querySelectorAll('.modal-box')
 
-document.querySelector(".nav-item-container--home").onclick = () => {
-    document.querySelector(".modal-box--active").classList.remove("modal-box--active")
-    document.querySelector(".modal-box--home").classList.add("modal-box--active")
-}
+var contentBtnList = document.querySelectorAll('.content__btn')
 
-// home button
+// var footerNavItemList = document.querySelectorAll('.footer-nav-item')
 
-document.querySelector(".content__btn--contact").onclick = () => {
-    document.querySelector(".modal-box--active").classList.remove("modal-box--active")
-    document.querySelector(".modal-box--contact").classList.add("modal-box--active")
 
-    document.querySelector(".footer-nav-item-icon--active").classList.remove("footer-nav-item-icon--active")
-    document.querySelector(".footer-nav-item--phone").classList.add("footer-nav-item-icon--active")
-}
 
-document.querySelector(".content__btn--about").onclick = () => {
-    document.querySelector(".modal-box--active").classList.remove("modal-box--active")
-    document.querySelector(".modal-box--about").classList.add("modal-box--active")
 
-    
-    document.querySelector(".footer-nav-item-icon--active").classList.remove("footer-nav-item-icon--active")
-    document.querySelector(".footer-nav-item--user").classList.add("footer-nav-item-icon--active")
-}
+Array.from(navContainerList).forEach(function(navContainer, index) {
+    navContainer.onclick=function() {
+        document.querySelector(".modal-box--active").classList.remove("modal-box--active")
+        modalBoxList[index].classList.add("modal-box--active")
+    }
+})
 
-// moblie
+Array.from(contentBtnList).forEach(function(contentBtnItem, index) {
+    contentBtnItem.onclick=function() {
+        document.querySelector(".modal-box--active").classList.remove("modal-box--active")
+        modalBoxList[index+1].classList.add("modal-box--active")
+    }
+})
 
 document.querySelector(".footer-nav-item--user").onclick = () => {
     document.querySelector(".modal-box--active").classList.remove("modal-box--active")
@@ -59,13 +48,18 @@ document.querySelector(".footer-nav-item--home").onclick = () => {
 }
 
 
-var phoneBtnContent = ""
-
-function mOver(obj) {
-    phoneBtnContent = obj.innerHTML;
-    obj.innerHTML = "0774122075"
-}
-
-function mOut(obj) {
-    obj.innerHTML = phoneBtnContent
+var phoneNumberHover = function(option) {
+    var phoneNumber = option.phoneNumber
+    
+    var phoneBtnLinkElement = document.querySelector(option.phoneLinkSelector) 
+    
+    var phoneBtnContent = phoneBtnLinkElement.innerHTML
+    
+    phoneBtnLinkElement.onmouseover = function (e) {
+        e.target.innerHTML = phoneNumber  
+    }
+    
+    phoneBtnLinkElement.onmouseout = function (e) {
+        e.target.innerHTML = phoneBtnContent
+    }
 }

@@ -1,22 +1,13 @@
 :root {
-    --header-text-color: #fbaa37;
-    --border-blue-color: #ccff66;
+    --header-text-color: hsl(0, 89%, 57%);
+    --border-blue-color: hsl(172, 70%, 59%);
     --white-color: #fff;
     --text-color: #000;
     --active-color: #4c7753;
     --black-color: #000;
 }
 
-@keyframes borderHoverGrowth {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes fade {
+@keyframes fade{
     0% {
         opacity: 0;
     }

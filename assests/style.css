@@ -55,22 +55,23 @@ ul{
 .header-name-link {
     text-decoration: none;
     color: var(--header-text-color);
-    text-shadow: -2px 2px 3px rgba(0,0,0, 0.5);
     font-weight: 500;
 }
 
 #header .nav-list{
     font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 #header .nav-item-container {
     line-height: 55px;
     display: block;
-    float: right;
     min-width: 80px;
     height: 55px;
     position: relative;
     text-align: center;
+    cursor: pointer;
 }
 
 .nav-item {
@@ -82,21 +83,20 @@ ul{
 }
 
 .nav-item::after {
-    display: none;
+    width: 0px;
     --border-height: 4px;
     content: "";
     position: absolute;
     top: calc(100% - var(--border-height) - 1px);
-    left: 0;
-    width: 50%;
+    left: 50%;
     height: 1px;
     border-bottom:var(--border-height) solid var(--border-blue-color);
-    animation: borderHoverGrowth ease-out .3s;
-    animation-fill-mode: forwards;
+    transform: translateX(-50%);;
+    transition: width linear 0.15s;
 }
 
 .nav-item-container:hover .nav-item::after{
-    display: block;
+    width: 100%;
 }
 
 .modal {
